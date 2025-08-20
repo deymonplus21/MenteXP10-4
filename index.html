@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MenteXP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated gradient background (can be swapped for video) -->
+  <div class="animated-bg"></div>
+
+  <!-- Optional video background. Drop an MP4 at assets/fondo.mp4 and uncomment below -->
+  <!--
+  <div class="background-video">
+    <video autoplay loop muted playsinline>
+      <source src="assets/fondo.mp4" type="video/mp4">
+    </video>
+  </div>
+  -->
+
+  <header class="topbar">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <button id="btnLeaderboard" class="btn ghost">Tabla de ganadores</button>
+  </header>
+
+  <!-- Start Screen -->
+  <main id="startScreen" class="card center">
+    <h1 class="title">MenteXP</h1>
+    <p class="subtitle">¡No te rindas! Cada error es una oportunidad de aprendizaje.</p>
+
+    <div class="form-row">
+      <label>Nombre del jugador</label>
+      <input id="playerName" maxlength="24" placeholder="Escribe tu nombre..." />
+    </div>
+
+    <div class="form-row">
+      <label>Elige área de estudio</label>
+      <select id="category">
+        <option value="matematica">Matemática</option>
+        <option value="comunicacion">Comunicación</option>
+        <option value="sociales">Ciencias Sociales</option>
+        <option value="ciencia">Ciencia y Tecnología</option>
+        <option value="civica">Formación Ciudadana y Cívica</option>
+        <option value="arte">Arte y Cultura</option>
+        <option value="mixtas">Mixtas</option>
+      </select>
+    </div>
+
+    <button id="btnStart" class="btn primary">Jugar</button>
+
+    <footer class="credits">
+      <span class="left">Creadores: <strong>MILLA ALVA, DOMINGUES LAGUADO, RODRIGUES LOPEZ</strong></span>
+      <span class="right">Equipo: <strong>Looney Tunes</strong></span>
+    </footer>
+  </main>
+
+  <!-- Game Screen -->
+  <section id="gameScreen" class="card hidden">
+    <div class="hud">
+      <div class="hud-item">Jugador: <span id="hudName">—</span></div>
+      <div class="hud-item">Categoría: <span id="hudCat">—</span></div>
+      <div class="hud-item">Tiempo: <span id="hudTime">60</span>s</div>
+      <div class="hud-item">Puntaje: <span id="hudScore">0</span></div>
+    </div>
+
+    <div class="question-box">
+      <h2 id="questionText">Pregunta...</h2>
+      <div id="options" class="options"></div>
+    </div>
+  </section>
+
+  <!-- End Screen -->
+  <section id="endScreen" class="card hidden">
+    <h2>¡Fin de la ronda!</h2>
+    <p id="finalScore">Puntaje: 0</p>
+    <div class="row">
+      <button id="btnPlayAgain" class="btn primary">Jugar otra ronda</button>
+      <button id="btnSubmitScore" class="btn">Guardar en ranking</button>
+    </div>
+  </section>
+
+  <!-- Leaderboard Modal -->
+  <div id="leaderboardModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Tabla de ganadores</h3>
+        <button id="closeModal" class="btn ghost">Cerrar</button>
+      </div>
+      <table id="leaderboardTable">
+        <thead>
+          <tr><th>#</th><th>Jugador</th><th>Puntaje</th><th>Fecha</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="note">* Ranking global en línea si configuras el endpoint; de lo contrario se guarda en este navegador.</p>
+    </div>
+  </div>
+
+  <audio id="bgm" loop>
+    <!-- Coloca un MP3 suave en assets/musica.mp3 y se reproducirá automáticamente al iniciar -->
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

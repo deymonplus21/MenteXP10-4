@@ -1,0 +1,2214 @@
+{
+  "matematica": [
+    {
+      "id": "m1",
+      "text": "¿Cuánto es 11 + 75?",
+      "options": [
+        "84",
+        "82",
+        "79",
+        "86"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m2",
+      "text": "¿Cuánto es 29 + 97?",
+      "options": [
+        "120",
+        "126",
+        "133",
+        "128"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m3",
+      "text": "¿Cuánto es 75 + 71?",
+      "options": [
+        "149",
+        "150",
+        "143",
+        "146"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m4",
+      "text": "¿Cuánto es 81 ÷ 9?",
+      "options": [
+        "11",
+        "7",
+        "13",
+        "9"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m5",
+      "text": "¿Cuánto es 15 + 56?",
+      "options": [
+        "70",
+        "71",
+        "74",
+        "77"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m6",
+      "text": "¿Cuánto es 8 × 12?",
+      "options": [
+        "91",
+        "92",
+        "93",
+        "96"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m7",
+      "text": "¿Cuánto es 70 ÷ 7?",
+      "options": [
+        "10",
+        "13",
+        "17",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m8",
+      "text": "¿Cuánto es 6 × 12?",
+      "options": [
+        "78",
+        "71",
+        "72",
+        "69"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m9",
+      "text": "¿Cuánto es 81 ÷ 9?",
+      "options": [
+        "9",
+        "3",
+        "16",
+        "13"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m10",
+      "text": "¿Cuánto es 8 × 11?",
+      "options": [
+        "85",
+        "94",
+        "89",
+        "88"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m11",
+      "text": "¿Cuánto es 108 ÷ 12?",
+      "options": [
+        "9",
+        "4",
+        "2",
+        "13"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m12",
+      "text": "¿Cuánto es 56 - 34?",
+      "options": [
+        "22",
+        "27",
+        "24",
+        "16"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m13",
+      "text": "¿Cuánto es 84 ÷ 7?",
+      "options": [
+        "18",
+        "13",
+        "12",
+        "8"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m14",
+      "text": "¿Cuánto es 12 × 11?",
+      "options": [
+        "132",
+        "127",
+        "137",
+        "129"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m15",
+      "text": "¿Cuánto es 86 - 22?",
+      "options": [
+        "65",
+        "67",
+        "64",
+        "70"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m16",
+      "text": "¿Cuánto es 9 × 11?",
+      "options": [
+        "96",
+        "103",
+        "99",
+        "101"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m17",
+      "text": "¿Cuánto es 110 ÷ 10?",
+      "options": [
+        "9",
+        "4",
+        "11",
+        "12"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m18",
+      "text": "¿Cuánto es 40 ÷ 4?",
+      "options": [
+        "10",
+        "14",
+        "13",
+        "7"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m19",
+      "text": "¿Cuánto es 78 - 25?",
+      "options": [
+        "53",
+        "50",
+        "47",
+        "54"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m20",
+      "text": "¿Cuánto es 10 + 51?",
+      "options": [
+        "61",
+        "65",
+        "58",
+        "63"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m21",
+      "text": "¿Cuánto es 24 ÷ 12?",
+      "options": [
+        "4",
+        "0",
+        "6",
+        "2"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m22",
+      "text": "¿Cuánto es 12 × 2?",
+      "options": [
+        "29",
+        "23",
+        "24",
+        "20"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m23",
+      "text": "¿Cuánto es 52 + 28?",
+      "options": [
+        "74",
+        "75",
+        "80",
+        "73"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m24",
+      "text": "¿Cuánto es 50 - 46?",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "7"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m25",
+      "text": "¿Cuánto es 8 × 3?",
+      "options": [
+        "18",
+        "24",
+        "27",
+        "31"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m26",
+      "text": "¿Cuánto es 3 × 5?",
+      "options": [
+        "20",
+        "16",
+        "13",
+        "15"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m27",
+      "text": "¿Cuánto es 9 × 5?",
+      "options": [
+        "39",
+        "42",
+        "44",
+        "45"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m28",
+      "text": "¿Cuánto es 8 ÷ 2?",
+      "options": [
+        "4",
+        "11",
+        "0",
+        "9"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m29",
+      "text": "¿Cuánto es 53 + 61?",
+      "options": [
+        "112",
+        "113",
+        "110",
+        "114"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m30",
+      "text": "¿Cuánto es 9 × 7?",
+      "options": [
+        "65",
+        "66",
+        "58",
+        "63"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m31",
+      "text": "¿Cuánto es 16 ÷ 8?",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "9"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m32",
+      "text": "¿Cuánto es 66 ÷ 6?",
+      "options": [
+        "11",
+        "7",
+        "15",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m33",
+      "text": "¿Cuánto es 65 - 24?",
+      "options": [
+        "48",
+        "45",
+        "46",
+        "41"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m34",
+      "text": "¿Cuánto es 96 - 83?",
+      "options": [
+        "17",
+        "13",
+        "9",
+        "11"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m35",
+      "text": "¿Cuánto es 66 ÷ 6?",
+      "options": [
+        "11",
+        "14",
+        "5",
+        "16"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m36",
+      "text": "¿Cuánto es 80 - 69?",
+      "options": [
+        "17",
+        "8",
+        "11",
+        "16"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m37",
+      "text": "¿Cuánto es 60 ÷ 10?",
+      "options": [
+        "9",
+        "6",
+        "13",
+        "4"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m38",
+      "text": "¿Cuánto es 42 ÷ 6?",
+      "options": [
+        "0",
+        "8",
+        "11",
+        "7"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m39",
+      "text": "¿Cuánto es 5 × 12?",
+      "options": [
+        "62",
+        "55",
+        "67",
+        "60"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m40",
+      "text": "¿Cuánto es 35 - 24?",
+      "options": [
+        "12",
+        "11",
+        "5",
+        "14"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m41",
+      "text": "¿Cuánto es 7 + 96?",
+      "options": [
+        "105",
+        "107",
+        "97",
+        "103"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m42",
+      "text": "¿Cuánto es 8 × 3?",
+      "options": [
+        "24",
+        "21",
+        "17",
+        "28"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m43",
+      "text": "¿Cuánto es 27 + 54?",
+      "options": [
+        "83",
+        "86",
+        "81",
+        "75"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m44",
+      "text": "¿Cuánto es 9 ÷ 3?",
+      "options": [
+        "1",
+        "8",
+        "0",
+        "3"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m45",
+      "text": "¿Cuánto es 56 + 58?",
+      "options": [
+        "121",
+        "111",
+        "114",
+        "119"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m46",
+      "text": "¿Cuánto es 12 × 2?",
+      "options": [
+        "23",
+        "29",
+        "30",
+        "24"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m47",
+      "text": "¿Cuánto es 77 + 95?",
+      "options": [
+        "171",
+        "173",
+        "179",
+        "172"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m48",
+      "text": "¿Cuánto es 79 - 48?",
+      "options": [
+        "36",
+        "31",
+        "35",
+        "34"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m49",
+      "text": "¿Cuánto es 69 - 9?",
+      "options": [
+        "57",
+        "60",
+        "55",
+        "56"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m50",
+      "text": "¿Cuánto es 3 × 7?",
+      "options": [
+        "21",
+        "28",
+        "25",
+        "23"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m51",
+      "text": "¿Cuánto es 59 - 49?",
+      "options": [
+        "15",
+        "10",
+        "8",
+        "5"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m52",
+      "text": "¿Cuánto es 92 - 79?",
+      "options": [
+        "16",
+        "15",
+        "13",
+        "17"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m53",
+      "text": "¿Cuánto es 21 ÷ 7?",
+      "options": [
+        "5",
+        "3",
+        "9",
+        "0"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m54",
+      "text": "¿Cuánto es 9 × 11?",
+      "options": [
+        "102",
+        "101",
+        "97",
+        "99"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "m55",
+      "text": "¿Cuánto es 51 - 42?",
+      "options": [
+        "14",
+        "12",
+        "9",
+        "2"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m56",
+      "text": "¿Cuánto es 22 + 5?",
+      "options": [
+        "34",
+        "22",
+        "27",
+        "23"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "m57",
+      "text": "¿Cuánto es 24 ÷ 2?",
+      "options": [
+        "12",
+        "11",
+        "8",
+        "7"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m58",
+      "text": "¿Cuánto es 44 ÷ 4?",
+      "options": [
+        "11",
+        "17",
+        "15",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "m59",
+      "text": "¿Cuánto es 31 + 22?",
+      "options": [
+        "51",
+        "53",
+        "49",
+        "50"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "m60",
+      "text": "¿Cuánto es 15 ÷ 3?",
+      "options": [
+        "0",
+        "1",
+        "5",
+        "9"
+      ],
+      "answer": 2
+    }
+  ],
+  "comunicacion": [
+    {
+      "id": "c1",
+      "text": "¿Cuál es el sinónimo de «feliz»?",
+      "options": [
+        "complicado",
+        "contento",
+        "empleo",
+        "conversar"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c2",
+      "text": "¿Cuál es el sinónimo de «rápido»?",
+      "options": [
+        "hogar",
+        "listo",
+        "audaz",
+        "veloz"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c3",
+      "text": "¿Cuál es el sinónimo de «triste»?",
+      "options": [
+        "apenado",
+        "empleo",
+        "equivocación",
+        "hogar"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c4",
+      "text": "¿Cuál es el sinónimo de «bonito»?",
+      "options": [
+        "infante",
+        "hermoso",
+        "empleo",
+        "asistencia"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c5",
+      "text": "¿Cuál es el sinónimo de «casa»?",
+      "options": [
+        "complicado",
+        "hogar",
+        "apenado",
+        "amable"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c6",
+      "text": "¿Cuál es el sinónimo de «niño»?",
+      "options": [
+        "infante",
+        "iniciar",
+        "engaño",
+        "hogar"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c7",
+      "text": "¿Cuál es el sinónimo de «grande»?",
+      "options": [
+        "enorme",
+        "observar",
+        "hermoso",
+        "contento"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c8",
+      "text": "¿Cuál es el sinónimo de «pequeño»?",
+      "options": [
+        "enorme",
+        "diminuto",
+        "empleo",
+        "jovial"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c9",
+      "text": "¿Cuál es el sinónimo de «hablar»?",
+      "options": [
+        "engaño",
+        "lesión",
+        "conversar",
+        "infante"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c10",
+      "text": "¿Cuál es el sinónimo de «comenzar»?",
+      "options": [
+        "listo",
+        "enorme",
+        "conversar",
+        "iniciar"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c11",
+      "text": "¿Cuál es el sinónimo de «terminar»?",
+      "options": [
+        "finalizar",
+        "conversar",
+        "oír",
+        "viento"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c12",
+      "text": "¿Cuál es el sinónimo de «difícil»?",
+      "options": [
+        "viento",
+        "asistencia",
+        "hermoso",
+        "complicado"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c13",
+      "text": "¿Cuál es el sinónimo de «fácil»?",
+      "options": [
+        "amable",
+        "listo",
+        "hogar",
+        "sencillo"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c14",
+      "text": "¿Cuál es el sinónimo de «ayuda»?",
+      "options": [
+        "oír",
+        "audaz",
+        "engaño",
+        "asistencia"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c15",
+      "text": "¿Cuál es el sinónimo de «error»?",
+      "options": [
+        "diminuto",
+        "equivocación",
+        "redactar",
+        "diminuto"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c16",
+      "text": "¿Cuál es el sinónimo de «camino»?",
+      "options": [
+        "empleo",
+        "audaz",
+        "sendero",
+        "veloz"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c17",
+      "text": "¿Cuál es el sinónimo de «inteligente»?",
+      "options": [
+        "conversar",
+        "lesión",
+        "contento",
+        "listo"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c18",
+      "text": "¿Cuál es el sinónimo de «trabajo»?",
+      "options": [
+        "listo",
+        "veloz",
+        "empleo",
+        "redactar"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c19",
+      "text": "¿Cuál es el sinónimo de «valiente»?",
+      "options": [
+        "sencillo",
+        "audaz",
+        "temor",
+        "jovial"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c20",
+      "text": "¿Cuál es el sinónimo de «miedo»?",
+      "options": [
+        "listo",
+        "temor",
+        "asistencia",
+        "finalizar"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c21",
+      "text": "¿Cuál es el sinónimo de «alegre»?",
+      "options": [
+        "jovial",
+        "finalizar",
+        "apenado",
+        "listo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c22",
+      "text": "¿Cuál es el sinónimo de «bonachón»?",
+      "options": [
+        "viento",
+        "amable",
+        "hogar",
+        "enorme"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c23",
+      "text": "¿Cuál es el sinónimo de «enojado»?",
+      "options": [
+        "conversar",
+        "listo",
+        "molesto",
+        "oír"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c24",
+      "text": "¿Cuál es el sinónimo de «ráfaga»?",
+      "options": [
+        "viento",
+        "relato",
+        "lesión",
+        "conversar"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c25",
+      "text": "¿Cuál es el sinónimo de «mirar»?",
+      "options": [
+        "complicado",
+        "equivocación",
+        "asistencia",
+        "observar"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c26",
+      "text": "¿Cuál es el sinónimo de «escuchar»?",
+      "options": [
+        "oír",
+        "hermoso",
+        "lesión",
+        "observar"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c27",
+      "text": "¿Cuál es el sinónimo de «escribir»?",
+      "options": [
+        "finalizar",
+        "redactar",
+        "hogar",
+        "listo"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c28",
+      "text": "¿Cuál es el sinónimo de «leer»?",
+      "options": [
+        "temor",
+        "complicado",
+        "oír",
+        "interpretar"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c29",
+      "text": "¿Cuál es el sinónimo de «cansado»?",
+      "options": [
+        "hermoso",
+        "empleo",
+        "jovial",
+        "fatigado"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c30",
+      "text": "¿Cuál es el sinónimo de «herida»?",
+      "options": [
+        "sendero",
+        "lesión",
+        "asistencia",
+        "hermoso"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "c31",
+      "text": "¿Cuál es el sinónimo de «historia»?",
+      "options": [
+        "relato",
+        "observar",
+        "interpretar",
+        "complicado"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c32",
+      "text": "¿Cuál es el sinónimo de «mentira»?",
+      "options": [
+        "engaño",
+        "amable",
+        "listo",
+        "complicado"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c33",
+      "text": "¿Cuál es el sinónimo de «hablar (contexto)»?",
+      "options": [
+        "equivocación",
+        "temor",
+        "conversar",
+        "interpretar"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c34",
+      "text": "¿Cuál es el sinónimo de «inteligente (contexto)»?",
+      "options": [
+        "audaz",
+        "equivocación",
+        "listo",
+        "diminuto"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c35",
+      "text": "¿Cuál es el sinónimo de «ráfaga (contexto)»?",
+      "options": [
+        "viento",
+        "iniciar",
+        "hermoso",
+        "engaño"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c36",
+      "text": "¿Cuál es el sinónimo de «error (contexto)»?",
+      "options": [
+        "listo",
+        "jovial",
+        "conversar",
+        "equivocación"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "c37",
+      "text": "¿Cuál es el sinónimo de «inteligente (contexto) (contexto)»?",
+      "options": [
+        "sencillo",
+        "viento",
+        "listo",
+        "interpretar"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c38",
+      "text": "¿Cuál es el sinónimo de «trabajo (contexto)»?",
+      "options": [
+        "finalizar",
+        "sencillo",
+        "empleo",
+        "fatigado"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "c39",
+      "text": "¿Cuál es el sinónimo de «inteligente (contexto) (contexto)»?",
+      "options": [
+        "listo",
+        "amable",
+        "veloz",
+        "molesto"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "c40",
+      "text": "¿Cuál es el sinónimo de «pequeño (contexto)»?",
+      "options": [
+        "equivocación",
+        "engaño",
+        "amable",
+        "diminuto"
+      ],
+      "answer": 3
+    }
+  ],
+  "sociales": [
+    {
+      "id": "s1",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Mercurio",
+        "Tierra",
+        "Marte"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s2",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Marte",
+        "Tierra",
+        "Saturno"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s3",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Marte",
+        "Júpiter",
+        "Saturno",
+        "Urano"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s4",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Saturno",
+        "Venus",
+        "Júpiter",
+        "Mercurio"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s5",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Saturno",
+        "Tierra",
+        "Venus",
+        "Neptuno"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "s6",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Mercurio",
+        "Urano",
+        "Venus",
+        "Neptuno"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s7",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Venus",
+        "Júpiter",
+        "Neptuno",
+        "Saturno"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s8",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Venus",
+        "Tierra",
+        "Mercurio",
+        "Júpiter"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s9",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Tierra",
+        "Marte",
+        "Saturno",
+        "Júpiter"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s10",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Urano",
+        "Venus",
+        "Júpiter"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s11",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Tierra",
+        "Marte",
+        "Urano",
+        "Venus"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s12",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Marte",
+        "Júpiter",
+        "Neptuno",
+        "Urano"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s13",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Júpiter",
+        "Saturno",
+        "Urano",
+        "Tierra"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s14",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Tierra",
+        "Saturno",
+        "Mercurio",
+        "Neptuno"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s15",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Marte",
+        "Urano",
+        "Júpiter",
+        "Saturno"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s16",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Júpiter",
+        "Neptuno",
+        "Tierra",
+        "Marte"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "s17",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Urano",
+        "Mercurio",
+        "Tierra",
+        "Neptuno"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s18",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Mercurio",
+        "Saturno",
+        "Júpiter"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "s19",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Júpiter",
+        "Mercurio",
+        "Tierra"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s20",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Saturno",
+        "Urano",
+        "Marte",
+        "Júpiter"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s21",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Tierra",
+        "Urano",
+        "Neptuno",
+        "Marte"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s22",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Venus",
+        "Tierra",
+        "Marte",
+        "Mercurio"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s23",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Tierra",
+        "Neptuno",
+        "Venus",
+        "Mercurio"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "s24",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Mercurio",
+        "Tierra",
+        "Saturno",
+        "Venus"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s25",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Mercurio",
+        "Marte",
+        "Urano"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s26",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Tierra",
+        "Neptuno",
+        "Venus",
+        "Saturno"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "s27",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Mercurio",
+        "Tierra",
+        "Urano",
+        "Marte"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "s28",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Mercurio",
+        "Júpiter",
+        "Venus",
+        "Tierra"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s29",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Venus",
+        "Urano",
+        "Neptuno",
+        "Mercurio"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "s30",
+      "text": "¿Cuál de los siguientes es un planeta del sistema solar?",
+      "options": [
+        "Neptuno",
+        "Tierra",
+        "Venus",
+        "Mercurio"
+      ],
+      "answer": 0
+    }
+  ],
+  "ciencia": [
+    {
+      "id": "t1",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "pastoso",
+        "condensado de Bose-Einstein",
+        "sólido"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "t2",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "líquido",
+        "plasma",
+        "energía",
+        "pastoso"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t3",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "plasma",
+        "energía",
+        "líquido",
+        "condensado de Bose-Einstein"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t4",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "pastoso",
+        "condensado de Bose-Einstein",
+        "líquido",
+        "energía"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t5",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "pastoso",
+        "energía",
+        "sólido",
+        "plasma"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t6",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "sólido",
+        "coloidal",
+        "condensado de Bose-Einstein",
+        "plasma"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t7",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "plasma",
+        "pastoso",
+        "sólido"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "t8",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "energía",
+        "pastoso",
+        "gaseoso",
+        "plasma"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t9",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "plasma",
+        "energía",
+        "gaseoso"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "t10",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "gaseoso",
+        "pastoso",
+        "energía",
+        "coloidal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t11",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "condensado de Bose-Einstein",
+        "gaseoso",
+        "pastoso",
+        "coloidal"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t12",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "sólido",
+        "energía",
+        "plasma"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t13",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "condensado de Bose-Einstein",
+        "pastoso",
+        "gaseoso",
+        "plasma"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t14",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "pastoso",
+        "gaseoso",
+        "energía",
+        "coloidal"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t15",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "condensado de Bose-Einstein",
+        "plasma",
+        "gaseoso",
+        "pastoso"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t16",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "gaseoso",
+        "condensado de Bose-Einstein",
+        "plasma",
+        "coloidal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t17",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "plasma",
+        "gaseoso",
+        "energía",
+        "coloidal"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t18",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "condensado de Bose-Einstein",
+        "gaseoso",
+        "plasma"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t19",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "energía",
+        "pastoso",
+        "gaseoso",
+        "plasma"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t20",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "energía",
+        "gaseoso",
+        "plasma",
+        "condensado de Bose-Einstein"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t21",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "condensado de Bose-Einstein",
+        "sólido",
+        "energía"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "t22",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "líquido",
+        "energía",
+        "pastoso",
+        "coloidal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t23",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "condensado de Bose-Einstein",
+        "sólido",
+        "coloidal",
+        "plasma"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t24",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "plasma",
+        "sólido",
+        "coloidal",
+        "condensado de Bose-Einstein"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t25",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "sólido",
+        "coloidal",
+        "plasma",
+        "pastoso"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t26",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "gaseoso",
+        "pastoso",
+        "energía",
+        "condensado de Bose-Einstein"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t27",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "líquido",
+        "condensado de Bose-Einstein",
+        "pastoso",
+        "energía"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t28",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "sólido",
+        "condensado de Bose-Einstein",
+        "energía",
+        "coloidal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "t29",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "coloidal",
+        "líquido",
+        "plasma",
+        "condensado de Bose-Einstein"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "t30",
+      "text": "Selecciona un estado de la materia:",
+      "options": [
+        "energía",
+        "sólido",
+        "coloidal",
+        "plasma"
+      ],
+      "answer": 1
+    }
+  ],
+  "civica": [
+    {
+      "id": "v1",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Constitución",
+        "Contrato de trabajo",
+        "Leyenda urbana"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "v2",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Constitución",
+        "Reglamento interno",
+        "Contrato de trabajo",
+        "Leyenda urbana"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "v3",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Leyenda urbana",
+        "Contrato de trabajo",
+        "Constitución"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "v4",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Constitución",
+        "Leyenda urbana",
+        "Contrato de trabajo"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "v5",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Constitución",
+        "Contrato de trabajo",
+        "Leyenda urbana"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "v6",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Contrato de trabajo",
+        "Leyenda urbana",
+        "Constitución"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "v7",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Leyenda urbana",
+        "Contrato de trabajo",
+        "Constitución"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "v8",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Leyenda urbana",
+        "Contrato de trabajo",
+        "Constitución"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "v9",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Leyenda urbana",
+        "Constitución",
+        "Reglamento interno",
+        "Contrato de trabajo"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "v10",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Contrato de trabajo",
+        "Reglamento interno",
+        "Constitución",
+        "Leyenda urbana"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "v11",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Contrato de trabajo",
+        "Reglamento interno",
+        "Leyenda urbana",
+        "Constitución"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "v12",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Constitución",
+        "Leyenda urbana",
+        "Reglamento interno",
+        "Contrato de trabajo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "v13",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Contrato de trabajo",
+        "Reglamento interno",
+        "Constitución",
+        "Leyenda urbana"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "v14",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Constitución",
+        "Contrato de trabajo",
+        "Reglamento interno",
+        "Leyenda urbana"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "v15",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Constitución",
+        "Reglamento interno",
+        "Contrato de trabajo",
+        "Leyenda urbana"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "v16",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Constitución",
+        "Contrato de trabajo",
+        "Leyenda urbana",
+        "Reglamento interno"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "v17",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Contrato de trabajo",
+        "Constitución",
+        "Leyenda urbana",
+        "Reglamento interno"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "v18",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Reglamento interno",
+        "Leyenda urbana",
+        "Constitución",
+        "Contrato de trabajo"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "v19",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Leyenda urbana",
+        "Constitución",
+        "Reglamento interno",
+        "Contrato de trabajo"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "v20",
+      "text": "¿Cuál es la norma fundamental que organiza el Estado?",
+      "options": [
+        "Constitución",
+        "Reglamento interno",
+        "Contrato de trabajo",
+        "Leyenda urbana"
+      ],
+      "answer": 0
+    }
+  ],
+  "arte": [
+    {
+      "id": "a1",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Da Vinci",
+        "Monet",
+        "Van Gogh",
+        "Picasso"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a2",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Dalí",
+        "Monet",
+        "Rembrandt",
+        "Miguel Ángel"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a3",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Rembrandt",
+        "Monet",
+        "Da Vinci",
+        "Picasso"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a4",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Monet",
+        "Van Gogh",
+        "Da Vinci",
+        "Miguel Ángel"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a5",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Da Vinci",
+        "Monet",
+        "Miguel Ángel",
+        "Rembrandt"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a6",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Monet",
+        "Da Vinci",
+        "Kahlo",
+        "Van Gogh"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a7",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Miguel Ángel",
+        "Da Vinci",
+        "Rembrandt",
+        "Picasso"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a8",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Dalí",
+        "Rembrandt",
+        "Monet",
+        "Miguel Ángel"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a9",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Monet",
+        "Rembrandt",
+        "Picasso",
+        "Van Gogh"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a10",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Miguel Ángel",
+        "Picasso",
+        "Kahlo",
+        "Monet"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a11",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Van Gogh",
+        "Monet",
+        "Rembrandt",
+        "Da Vinci"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a12",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Van Gogh",
+        "Kahlo",
+        "Monet",
+        "Da Vinci"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "a13",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Van Gogh",
+        "Da Vinci",
+        "Dalí",
+        "Rembrandt"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a14",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Dalí",
+        "Rembrandt",
+        "Picasso",
+        "Da Vinci"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a15",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Rembrandt",
+        "Picasso",
+        "Monet",
+        "Van Gogh"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "a16",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Picasso",
+        "Miguel Ángel",
+        "Monet",
+        "Kahlo"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "a17",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Van Gogh",
+        "Picasso",
+        "Miguel Ángel",
+        "Kahlo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a18",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Monet",
+        "Da Vinci",
+        "Kahlo",
+        "Dalí"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a19",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Monet",
+        "Picasso",
+        "Miguel Ángel",
+        "Kahlo"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "a20",
+      "text": "¿Cuál de los siguientes es un pintor famoso?",
+      "options": [
+        "Da Vinci",
+        "Miguel Ángel",
+        "Van Gogh",
+        "Dalí"
+      ],
+      "answer": 2
+    }
+  ]
+}
