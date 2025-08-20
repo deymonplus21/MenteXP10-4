@@ -9,8 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Aquí agrego estilos para posicionar el modal a un costado y hacerlo flotante */
-
+    /* Tabla flotante */
     #tablaGanadores {
       position: fixed;
       top: 20px;
@@ -40,24 +39,15 @@
   </style>
 </head>
 <body>
-  <!-- Animated gradient background (can be swapped for video) -->
+  <!-- Fondo animado -->
   <div class="animated-bg"></div>
-
-  <!-- Optional video background. Drop an MP4 at assets/fondo.mp4 and uncomment below -->
-  <!--
-  <div class="background-video">
-    <video autoplay loop muted playsinline>
-      <source src="assets/fondo.mp4" type="video/mp4">
-    </video>
-  </div>
-  -->
 
   <header class="topbar">
     <img src="assets/logo.png" alt="Logo" class="logo">
     <button id="btnLeaderboard" class="btn ghost">Tabla de ganadores</button>
   </header>
 
-  <!-- Start Screen -->
+  <!-- Pantalla de inicio -->
   <main id="startScreen" class="card center">
     <h1 class="title">MenteXP</h1>
     <p class="subtitle">¡No te rindas! Cada error es una oportunidad de aprendizaje.</p>
@@ -88,7 +78,7 @@
     </footer>
   </main>
 
-  <!-- Game Screen -->
+  <!-- Pantalla de juego -->
   <section id="gameScreen" class="card hidden">
     <div class="hud">
       <div class="hud-item">Jugador: <span id="hudName">—</span></div>
@@ -103,7 +93,7 @@
     </div>
   </section>
 
-  <!-- End Screen -->
+  <!-- Pantalla final -->
   <section id="endScreen" class="card hidden">
     <h2>¡Fin de la ronda!</h2>
     <p id="finalScore">Puntaje: 0</p>
@@ -111,9 +101,12 @@
       <button id="btnPlayAgain" class="btn primary">Jugar otra ronda</button>
       <button id="btnSubmitScore" class="btn">Guardar en ranking</button>
     </div>
+    <div class="row" style="margin-top: 16px;">
+      <button id="btnHome" class="btn primary">🏠 Regresar al Inicio</button>
+    </div>
   </section>
 
-  <!-- Leaderboard Modal (ahora flotante a la derecha arriba) -->
+  <!-- Modal flotante -->
   <div id="tablaGanadores" class="modal hidden">
     <div class="modal-card">
       <div class="modal-header">
@@ -131,7 +124,6 @@
   </div>
 
   <audio id="bgm" loop>
-    <!-- Coloca un MP3 suave en assets/musica.mp3 y se reproducirá automáticamente al iniciar -->
     <source src="assets/musica.mp3" type="audio/mpeg">
   </audio>
 
@@ -142,6 +134,17 @@
       const cerrarBtn = document.getElementById('cerrarTablaBtn');
       const tabla = document.getElementById('tablaGanadores');
 
+      const btnHome = document.getElementById('btnHome');
+      const startScreen = document.getElementById('startScreen');
+      const gameScreen = document.getElementById('gameScreen');
+      const endScreen = document.getElementById('endScreen');
+
+      const hudScore = document.getElementById('hudScore');
+      const hudTime = document.getElementById('hudTime');
+      const hudName = document.getElementById('hudName');
+      const hudCat = document.getElementById('hudCat');
+
+      // Mostrar y ocultar tabla de ganadores
       abrirBtn.addEventListener('click', () => {
         tabla.classList.remove('hidden');
         tabla.classList.add('visible');
@@ -152,6 +155,20 @@
         setTimeout(() => {
           tabla.classList.add('hidden');
         }, 300);
+      });
+
+      // Botón regresar al inicio
+      btnHome.addEventListener('click', () => {
+        // Ocultar pantalla final, mostrar inicio
+        endScreen.classList.add('hidden');
+        startScreen.classList.remove('hidden');
+        gameScreen.classList.add('hidden');
+
+        // Reiniciar datos
+        hudScore.textContent = "0";
+        hudTime.textContent = "60";
+        hudName.textContent = "—";
+        hudCat.textContent = "—";
       });
     });
   </script>
