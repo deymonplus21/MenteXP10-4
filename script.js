@@ -1,4 +1,3 @@
-
 // ==========================
 // Configuración del ranking
 // ==========================
@@ -17,7 +16,9 @@ const state = {
   current: null,
   pool: [], // preguntas disponibles en esta ronda
   askedIds: new Set(),
-  timerId: null
+  timerId: null,
+  roundCount: 0,   // contador de preguntas respondidas en esta ronda
+  maxRounds: 20    // máximo de preguntas por ronda
 };
 
 // Utilidades
@@ -54,6 +55,19 @@ const leaderboardModal = $("#leaderboardModal");
 const closeModal = $("#closeModal");
 const leaderboardTbody = $("#leaderboardTable tbody");
 
+// Agregar botón "Hogar" dinámicamente al endScreen
+const btnHome = document.createElement('button');
+btnHome.textContent = "Hogar";
+btnHome.className = "btn ghost";
+btnHome.style.marginLeft = "12px";  // separación al lado de "Jugar otra ronda"
+btnHome.addEventListener("click", () => {
+  endScreen.classList.add("hidden");
+  startScreen.classList.remove("hidden");
+  // Detenemos timer si quedara activo
+  clearInterval(state.timerId);
+});
+document.querySelector('#endScreen .row').appendChild(btnHome);
+
 // Iniciar
 window.addEventListener("DOMContentLoaded", async ()=>{
   await loadQuestions();
@@ -83,6 +97,7 @@ function startGame(){
   state.category = categorySel.value;
   state.score = 0;
   state.askedIds.clear();
+  state.roundCount = 0; // Reiniciamos contador de preguntas respondidas
   hudScore.textContent = "0";
   hudName.textContent = state.player;
   hudCat.textContent = prettyCat(state.category);
@@ -143,9 +158,16 @@ function endRound(){
   gameScreen.classList.add("hidden");
   endScreen.classList.remove("hidden");
   $("#finalScore").textContent = `Puntaje: ${state.score}`;
+  clearInterval(state.timerId);
 }
 
 function nextQuestion(){
+  // Si llegamos al límite de preguntas, termina la ronda
+  if(state.roundCount >= state.maxRounds){
+    endRound();
+    return;
+  }
+
   // Buscar la siguiente que no haya salido
   let next = null;
   while(state.pool.length && !next){
@@ -181,6 +203,7 @@ function renderQuestion(q){
 function onAnswer(correct){
   if(correct) state.score += 10;
   hudScore.textContent = state.score;
+  state.roundCount++; // aumentamos contador de preguntas respondidas
   nextQuestion();
 }
 
@@ -236,6 +259,10 @@ async function renderLeaderboard(){
   });
 }
 
-function escapeHTML(str=""){
-  return str.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+// Función para evitar inyección simple en tabla (podés dejarlo así o usar una librería)
+function escapeHTML(text){
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
 }
+
