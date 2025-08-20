@@ -8,6 +8,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Aquí agrego estilos para posicionar el modal a un costado y hacerlo flotante */
+
+    #tablaGanadores {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 350px;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: var(--glass);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 20px;
+      padding: 16px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      z-index: 100;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    #tablaGanadores.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(100%);
+    }
+    #tablaGanadores.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
+  </style>
 </head>
 <body>
   <!-- Animated gradient background (can be swapped for video) -->
@@ -83,12 +113,12 @@
     </div>
   </section>
 
-  <!-- Leaderboard Modal -->
-  <div id="leaderboardModal" class="modal hidden">
+  <!-- Leaderboard Modal (ahora flotante a la derecha arriba) -->
+  <div id="tablaGanadores" class="modal hidden">
     <div class="modal-card">
       <div class="modal-header">
         <h3>Tabla de ganadores</h3>
-        <button id="closeModal" class="btn ghost">Cerrar</button>
+        <button id="cerrarTablaBtn" class="btn ghost">Cerrar</button>
       </div>
       <table id="leaderboardTable">
         <thead>
@@ -106,5 +136,25 @@
   </audio>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const abrirBtn = document.getElementById('btnLeaderboard');
+      const cerrarBtn = document.getElementById('cerrarTablaBtn');
+      const tabla = document.getElementById('tablaGanadores');
+
+      abrirBtn.addEventListener('click', () => {
+        tabla.classList.remove('hidden');
+        tabla.classList.add('visible');
+      });
+
+      cerrarBtn.addEventListener('click', () => {
+        tabla.classList.remove('visible');
+        setTimeout(() => {
+          tabla.classList.add('hidden');
+        }, 300);
+      });
+    });
+  </script>
 </body>
 </html>
+
