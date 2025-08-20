@@ -1,9 +1,7 @@
 // ==========================
 // Configuración del ranking
 // ==========================
-// Si deseas ranking global, publica un Apps Script como Web App que acepte GET/POST
-// y coloca aquí su URL. Si lo dejas vacío, se usará almacenamiento local del navegador.
-const CLOUD_ENDPOINT = ""; // <-- pega aquí tu URL de Apps Script (opcional)
+const CLOUD_ENDPOINT = "";
 
 // ==========================
 // Estado del juego
@@ -11,24 +9,26 @@ const CLOUD_ENDPOINT = ""; // <-- pega aquí tu URL de Apps Script (opcional)
 const state = {
   player: "",
   category: "mixtas",
-  time: 60,
+  time: 30,
   score: 0,
   current: null,
-  pool: [], // preguntas disponibles en esta ronda
+  pool: [],
   askedIds: new Set(),
   timerId: null,
-  roundCount: 0,   // contador de preguntas respondidas en esta ronda
-  maxRounds: 20    // máximo de preguntas por ronda
+  questionsAskedCount: 0,
+  maxQuestions: 20
 };
 
+const globalUsedIds = new Set();
+
 // Utilidades
-const $ = (sel)=>document.querySelector(sel);
-const $$ = (sel)=>document.querySelectorAll(sel);
-const shuffle = (arr)=>arr.sort(()=>Math.random()-0.5);
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => document.querySelectorAll(sel);
+const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
 
 // Cargar preguntas JSON
 let QUESTIONS = {};
-async function loadQuestions(){
+async function loadQuestions() {
   const res = await fetch("questions.json");
   QUESTIONS = await res.json();
 }
@@ -55,49 +55,46 @@ const leaderboardModal = $("#leaderboardModal");
 const closeModal = $("#closeModal");
 const leaderboardTbody = $("#leaderboardTable tbody");
 
-// Agregar botón "Hogar" dinámicamente al endScreen
-const btnHome = document.createElement('button');
-btnHome.textContent = "Hogar";
-btnHome.className = "btn ghost";
-btnHome.style.marginLeft = "12px";  // separación al lado de "Jugar otra ronda"
-btnHome.addEventListener("click", () => {
-  endScreen.classList.add("hidden");
-  startScreen.classList.remove("hidden");
-  // Detenemos timer si quedara activo
-  clearInterval(state.timerId);
-});
-document.querySelector('#endScreen .row').appendChild(btnHome);
-
 // Iniciar
-window.addEventListener("DOMContentLoaded", async ()=>{
+window.addEventListener("DOMContentLoaded", async () => {
   await loadQuestions();
-  // Auto reproducción de música al iniciar juego (muchos navegadores requieren interacción)
-  document.body.addEventListener("click", ()=>{
-    if (bgm && bgm.src && bgm.paused) { bgm.play().catch(()=>{}); }
-  }, {once:true});
+  document.body.addEventListener(
+    "click",
+    () => {
+      if (bgm && bgm.src && bgm.paused) {
+        bgm.play().catch(() => {});
+      }
+    },
+    { once: true }
+  );
 });
 
 btnStart.addEventListener("click", startGame);
 btnPlayAgain.addEventListener("click", resetAndStart);
 btnSubmitScore.addEventListener("click", submitScore);
 
-btnLeaderboard.addEventListener("click", async ()=>{
+btnLeaderboard.addEventListener("click", async () => {
   leaderboardModal.classList.remove("hidden");
   await renderLeaderboard();
 });
-closeModal.addEventListener("click", ()=> leaderboardModal.classList.add("hidden"));
+closeModal.addEventListener("click", () =>
+  leaderboardModal.classList.add("hidden")
+);
 
 // ==========================
 // Lógica del juego
 // ==========================
-function startGame(){
+function startGame() {
   const name = playerNameIn.value.trim();
-  if(!name){ alert("Escribe tu nombre para jugar"); return; }
+  if (!name) {
+    alert("Escribe tu nombre para jugar");
+    return;
+  }
   state.player = name;
   state.category = categorySel.value;
   state.score = 0;
   state.askedIds.clear();
-  state.roundCount = 0; // Reiniciamos contador de preguntas respondidas
+  state.questionsAskedCount = 0;
   hudScore.textContent = "0";
   hudName.textContent = state.player;
   hudCat.textContent = prettyCat(state.category);
@@ -105,15 +102,15 @@ function startGame(){
   startScreen.classList.add("hidden");
   gameScreen.classList.remove("hidden");
   endScreen.classList.add("hidden");
-  startTimer(60);
+  startTimer(30);
   nextQuestion();
 }
 
-function resetAndStart(){
+function resetAndStart() {
   startGame();
 }
 
-function prettyCat(cat){
+function prettyCat(cat) {
   const map = {
     matematica: "Matemática",
     comunicacion: "Comunicación",
@@ -121,148 +118,166 @@ function prettyCat(cat){
     ciencia: "Ciencia y Tecnología",
     civica: "Formación Ciudadana y Cívica",
     arte: "Arte y Cultura",
-    mixtas: "Mixtas"
+    mixtas: "Mixtas",
   };
   return map[cat] || cat;
 }
 
-function buildPool(){
-  // Mezclar preguntas según categoría
+function buildPool() {
   let pool = [];
-  if(state.category === "mixtas"){
-    for(const key of ["matematica","comunicacion","sociales","ciencia","civica","arte"]){
-      pool = pool.concat(QUESTIONS[key] || []);
+  if (state.category === "mixtas") {
+    for (const key of [
+      "matematica",
+      "comunicacion",
+      "sociales",
+      "ciencia",
+      "civica",
+      "arte",
+    ]) {
+      const filtered = (QUESTIONS[key] || []).filter(
+        (q) => !globalUsedIds.has(q.id)
+      );
+      pool = pool.concat(filtered);
     }
-  }else{
-    pool = (QUESTIONS[state.category] || []).slice();
+  } else {
+    pool = (QUESTIONS[state.category] || []).filter(
+      (q) => !globalUsedIds.has(q.id)
+    );
   }
   shuffle(pool);
   state.pool = pool;
+
+  if (state.pool.length < state.maxQuestions) {
+    alert(
+      "Quedan menos preguntas disponibles que la cantidad máxima. El juego puede terminar antes."
+    );
+  }
 }
 
-function startTimer(seconds){
+function startTimer(seconds) {
   clearInterval(state.timerId);
   state.time = seconds;
   hudTime.textContent = state.time;
-  state.timerId = setInterval(()=>{
+  state.timerId = setInterval(() => {
     state.time--;
     hudTime.textContent = state.time;
-    if(state.time <= 0){
+    if (state.time <= 0) {
       clearInterval(state.timerId);
       endRound();
     }
   }, 1000);
 }
 
-function endRound(){
+function endRound() {
+  clearInterval(state.timerId);
   gameScreen.classList.add("hidden");
   endScreen.classList.remove("hidden");
   $("#finalScore").textContent = `Puntaje: ${state.score}`;
-  clearInterval(state.timerId);
 }
 
-function nextQuestion(){
-  // Si llegamos al límite de preguntas, termina la ronda
-  if(state.roundCount >= state.maxRounds){
+function nextQuestion() {
+  if (
+    state.questionsAskedCount >= state.maxQuestions ||
+    state.pool.length === 0
+  ) {
     endRound();
     return;
   }
 
-  // Buscar la siguiente que no haya salido
   let next = null;
-  while(state.pool.length && !next){
+  while (state.pool.length && !next) {
     const cand = state.pool.pop();
-    if(!state.askedIds.has(cand.id)){
+    if (!state.askedIds.has(cand.id) && !globalUsedIds.has(cand.id)) {
       next = cand;
     }
   }
-  if(!next){
-    // Si se acaban antes de que termine el tiempo, volvemos a construir un nuevo set sin repetir en la ronda
-    buildPool();
-    next = state.pool.pop();
+
+  if (!next) {
+    endRound();
+    return;
   }
+
   state.current = next;
   state.askedIds.add(next.id);
+  globalUsedIds.add(next.id);
+
+  state.questionsAskedCount++;
   renderQuestion(next);
 }
 
-function renderQuestion(q){
+function renderQuestion(q) {
   qText.textContent = q.text;
   optionsBox.innerHTML = "";
-  const choices = q.options.map((opt, idx)=>({opt, idx}));
+  const choices = q.options.map((opt, idx) => ({ opt, idx }));
   shuffle(choices);
-  choices.forEach(({opt, idx})=>{
+  choices.forEach(({ opt, idx }) => {
     const btn = document.createElement("button");
     btn.className = "option";
     btn.textContent = opt;
-    btn.addEventListener("click", ()=> onAnswer(idx === q.answer));
+    btn.addEventListener("click", () => onAnswer(idx === q.answer));
     optionsBox.appendChild(btn);
   });
 }
 
-function onAnswer(correct){
-  if(correct) state.score += 10;
+function onAnswer(correct) {
+  if (correct) state.score += 10;
   hudScore.textContent = state.score;
-  state.roundCount++; // aumentamos contador de preguntas respondidas
   nextQuestion();
 }
 
 // ==========================
 // Ranking
 // ==========================
-async function submitScore(){
+async function submitScore() {
   const record = {
     name: state.player,
     score: state.score,
     category: state.category,
-    ts: Date.now()
+    ts: Date.now(),
   };
   try {
-    if(CLOUD_ENDPOINT){
-      await fetch(CLOUD_ENDPOINT, { method:"POST", mode:"no-cors", body: JSON.stringify(record) });
+    if (CLOUD_ENDPOINT) {
+      await fetch(CLOUD_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(record),
+      });
     } else {
-      // Local fallback
       const data = JSON.parse(localStorage.getItem("mentexp_ranking") || "[]");
       data.push(record);
       localStorage.setItem("mentexp_ranking", JSON.stringify(data));
     }
     alert("¡Puntaje guardado!");
     await renderLeaderboard();
-  } catch (e){
+  } catch (e) {
     console.error(e);
     alert("No se pudo guardar el puntaje.");
   }
 }
 
-async function renderLeaderboard(){
+async function renderLeaderboard() {
   let rows = [];
-  if(CLOUD_ENDPOINT){
-    try{
+  if (CLOUD_ENDPOINT) {
+    try {
       const res = await fetch(CLOUD_ENDPOINT + "?list=1", { cache: "no-cache" });
       rows = await res.json();
-    }catch(e){
+    } catch (e) {
       console.error(e);
       rows = [];
     }
   } else {
     rows = JSON.parse(localStorage.getItem("mentexp_ranking") || "[]");
   }
-  // Ordenar por puntaje desc
-  rows.sort((a,b)=> b.score - a.score || a.ts - b.ts);
-  // Mostrar top 20
+  rows.sort((a, b) => b.score - a.score || a.ts - b.ts);
   leaderboardTbody.innerHTML = "";
-  rows.slice(0,20).forEach((r, i)=>{
+  rows.slice(0, 20).forEach((r, i) => {
     const tr = document.createElement("tr");
     const date = new Date(r.ts || Date.now());
-    tr.innerHTML = `<td>${i+1}</td><td>${escapeHTML(r.name)}</td><td>${r.score}</td><td>${date.toLocaleString()}</td>`;
+    tr.innerHTML = `<td>${i + 1}</td><td>${escapeHTML(
+      r.name
+    )}</td><td>${r.score}</td><td>${date.toLocaleString()}</td>`;
     leaderboardTbody.appendChild(tr);
   });
 }
 
-// Función para evitar inyección simple en tabla (podés dejarlo así o usar una librería)
-function escapeHTML(text){
-  const div = document.createElement('div');
-  div.textContent = text;
-  return div.innerHTML;
-}
 
